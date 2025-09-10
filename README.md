@@ -2,14 +2,7 @@
 
 <div align="center">
 
-![MyLinkedList](favicon.svg)
-
 **JavaScript로 구현한 LinkedList 자료구조 학습 도구**
-
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/ko/docs/Web/JavaScript)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26-orange.svg)](https://developer.mozilla.org/ko/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6-blue.svg)](https://developer.mozilla.org/ko/docs/Web/CSS)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 </div>
 
