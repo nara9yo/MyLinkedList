@@ -9,6 +9,7 @@
 ## 📋 목차
 
 - [🎯 프로젝트 개요](#-프로젝트-개요)
+- [🌐 라이브 데모](#-라이브-데모)
 - [✨ 주요 기능](#-주요-기능)
 - [🚀 기술 스택](#-기술-스택)
 - [📁 프로젝트 구조](#-프로젝트-구조)
@@ -27,6 +28,12 @@
 MyLinkedList는 JavaScript로 구현한 LinkedList 자료구조의 시각적 학습 도구입니다. 
 LinkedList의 기본 개념부터 Queue, Stack 구현까지 단계별로 학습할 수 있으며, 
 실시간 시각화를 통해 자료구조의 동작 원리를 직관적으로 이해할 수 있습니다.
+
+## 🌐 라이브 데모
+
+**📱 [GitHub Pages에서 바로 사용해보기](https://nara9yo.github.io/MyLinkedList)**
+
+![Image](https://github.com/user-attachments/assets/14389951-04c4-4efe-ad60-0bbc0d9726b1)
 
 ### 🎓 학습 목표
 
