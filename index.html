@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 기본 메타 정보 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyLinkedList 시각화</title>
+    
+    <!-- 파비콘 및 스타일시트 -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 페이지 헤더 -->
+        <header>
+            <h1>MyLinkedList 자료구조 시각화</h1>
+            <p>LinkedList, Queue, Stack을 시각적으로 표현하고 조작해보세요</p>
+        </header>
+
+        <!-- 조작 컨트롤 영역 -->
+        <div class="controls">
+            <!-- MyLinkedList 조작 패널 -->
+            <div class="control-group">
+                <h3>MyLinkedList 조작</h3>
+                <!-- 데이터 추가 -->
+                <div class="input-group">
+                    <input type="text" id="linkedListInput" placeholder="데이터 입력" maxlength="10">
+                    <button onclick="addToLinkedList()">Add</button>
+                </div>
+                <!-- 인덱스 조작 -->
+                <div class="input-group">
+                    <input type="number" id="linkedListIndex" placeholder="인덱스" min="0">
+                    <div class="button-group">
+                        <button onclick="getFromLinkedList()">Get</button>
+                        <button onclick="deleteFromLinkedList()">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Queue 조작 패널 -->
+            <div class="control-group">
+                <h3>Queue 조작</h3>
+                <!-- 데이터 추가 (enqueue) -->
+                <div class="input-group">
+                    <input type="text" id="queueInput" placeholder="데이터 입력" maxlength="10">
+                    <button onclick="enqueue()">Enqueue</button>
+                </div>
+                <!-- 데이터 조작 -->
+                <div class="button-group">
+                    <button onclick="dequeue()">Dequeue</button>
+                    <button onclick="front()">Front</button>
+                </div>
+            </div>
+
+            <!-- Stack 조작 패널 -->
+            <div class="control-group">
+                <h3>Stack 조작</h3>
+                <!-- 데이터 추가 (push) -->
+                <div class="input-group">
+                    <input type="text" id="stackInput" placeholder="데이터 입력" maxlength="10">
+                    <button onclick="push()">Push</button>
+                </div>
+                <!-- 데이터 조작 -->
+                <div class="button-group">
+                    <button onclick="pop()">Pop</button>
+                    <button onclick="getStackTop()">Top</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="visualization">
+            <div class="data-structure">
+                <h3>MyLinkedList</h3>
+                <div id="linkedListVisual" class="linked-list">
+                    <div class="empty-message">리스트가 비어있습니다</div>
+                </div>
+                <div class="info">
+                    <span>크기: <span id="linkedListSize">0</span></span>
+                    <span>배열: <span id="linkedListArray">[]</span></span>
+                </div>
+            </div>
+
+            <div class="data-structure">
+                <h3>Queue (FIFO)</h3>
+                <div id="queueVisual" class="queue">
+                    <div class="empty-message">큐가 비어있습니다</div>
+                </div>
+                <div class="info">
+                    <span>크기: <span id="queueSize">0</span></span>
+                    <span>배열: <span id="queueArray">[]</span></span>
+                </div>
+            </div>
+
+            <div class="data-structure">
+                <h3>Stack (LIFO)</h3>
+                <div id="stackVisual" class="stack">
+                    <div class="empty-message">스택이 비어있습니다</div>
+                </div>
+                <div class="info">
+                    <span>크기: <span id="stackSize">0</span></span>
+                    <span>배열: <span id="stackArray">[]</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h3>Iterator 데모</h3>
+            <p>MyLinkedList는 Iterator를 구현하여 for-each 순회가 가능합니다:</p>
+            <div class="demo-code">
+                <code>
+                    for (const data of myLinkedList) {<br>
+                    &nbsp;&nbsp;console.log(data);<br>
+                    }
+                </code>
+            </div>
+            <button onclick="runIteratorDemo()">Iterator 데모 실행</button>
+            <div id="iteratorOutput" class="output"></div>
+        </div>
+
+        <div class="log-section">
+            <h3>작업 로그</h3>
+            <div id="logOutput" class="log-output"></div>
+            <button onclick="clearLog()">로그 지우기</button>
+        </div>
+    </div>
+
+    <script src="MyLinkedList.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
